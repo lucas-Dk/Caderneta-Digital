@@ -61,12 +61,12 @@ print('\nEssas são as suas notas: \033[1;4;96m{}\033[m\n'.format(notas))
 print('\nEssa é sua média: \033[1;33m{:.1f}\033[m'.format(media))
 
 #Pergunta se quer saber se foi aprovado ou reprovado
-ap_rp = str(input('\033[1;4mA\033[m ->  Aprovado \033[1;4mR\033[m ->  reprovado (x para sair): ')).upper()[0]
+ap_rp = str(input('Quer saber se o aluno foi aprovado ou reprovado? [S/N] x para sair: ')).upper()[0] 
 
 #Pergunta novamente caso as respostas não estiver de acordo
 while ap_rp not in 'S' and ap_rp not in 'N' and ap_rp not in 'X':
   print('\n\033[1;31mOpção Inválida!\033[m')
-  ap_rp = str(input('\033[1;4mA\033[m ->  Aprovado \033[1;4mR\033[m ->  reprovado (x para sair): ')).upper()[0]
+  ap_rp = str(input('Quer saber se o aluno foi aprovado ou reprovado? [S/N] x para sair: ')).upper()[0] 
 
 #Saída de dados
 if ap_rp in 'S':
